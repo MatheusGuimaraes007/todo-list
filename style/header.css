@@ -1,0 +1,18 @@
+:root {
+  --corPrimaria: #ffcc33;
+  --corsecundaria: #ffa832;
+  --corTerciaria: #fe8330;
+  --corQuartenaria: #fe5f2f;
+  --corQuinternaria: #fd3a2d;
+}
+#container-header {
+  width: 100%;
+  height: 20vh;
+  background-color: var(--corTerciaria);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container-header h1 {
+  color: white;
+}

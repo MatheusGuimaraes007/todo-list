@@ -1,0 +1,80 @@
+:root {
+  --corPrimaria: #ffcc33;
+  --corsecundaria: #ffa832;
+  --corTerciaria: #fe8330;
+  --corQuartenaria: #fe5f2f;
+  --corQuinternaria: #fd3a2d;
+}
+#container-tarefas {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  background-color: var(--corTerciaria);
+  border-radius: 10px;
+}
+#container-tarefas h4 {
+  margin-bottom: 0.625rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+}
+#tarefas {
+  width: 80%;
+  margin-bottom: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container-lista {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--corsecundaria);
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 1rem;
+  border: 10px double var(--corQuinternaria);
+  border-radius: 0.625rem;
+}
+.container-lista span {
+  font-size: 1.4rem;
+}
+
+#containet-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: row-reverse;
+}
+
+#importante {
+  justify-self: center;
+  font-size: 1.625rem;
+  color: red;
+  font-weight: 700;
+}
+.classificacao {
+  justify-self: center;
+}
+#btnExcluir, #btnFeito {
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px 5px;
+  cursor: pointer;
+  opacity: .8;
+  border-radius: 10px;
+}
+#btnExcluir:hover, #btnFeito:hover {
+  opacity: 1;
+}
+#btnFeito {
+  background-color: green;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/styles.css">
+  <title>Lista de Tarefa</title>
+</head>
+
+<body>
+  <header id="container-header">
+    <h1>Lista de Tarefas</h1>
+  </header>
+  <section id="container-section">
+    <div id="container-form">
+      <h4>Inclua sua Tarefa</h4>
+      <form>
+        <label for="nameUser">Nome de quem realizará a terefa</label>
+        <input id="nameUser" type="text" required>
+        <label for="nameTarefa">Nome da Tarefa</label>
+        <input id="nameTarefa" type="text" required>
+        <label for="date">Data da Tarefa</label>
+        <input id="date" type="date" required>
+        <label for="hours">Horário da Tarefa</label>
+        <input id="hours" type="text" required>
+        <label for="important">Importância da Tarefa</label>
+        <select name="important" id="important" required>
+          <option value="importante">Importante</option>
+          <option value="muitoImportante">Muito Importante</option>
+        </select>
+        <button type="submit" id="enviarTarefa">Enviar Tarefa</button>
+      </form>
+    </div>
+    <div id="container-tarefas">
+      <h4>Suas Tarefas</h4>
+      <div id="tarefas"></div>
+    </div>
+  </section>
+  <script type="module" src="resources/script.js"></script>
+</body>
+
+</html>
