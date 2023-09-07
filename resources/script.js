@@ -42,11 +42,11 @@ const newItem = (nameUser, nameTarefa, date, hours, important, indice) => {
   item.innerHTML = `
   <span class="classificacao">Nome:</span>
   <span id="nomeRealizar">${nameUser}</span>
-  <span class="classificacao">Nome da Tarefa:</span>
+  <span class="classificacao">Tarefa:</span>
   <span id="nomeTarefa">${nameTarefa}</span>
-  <span class="classificacao">Data de realização:</span>
+  <span class="classificacao">Data:</span>
   <span id="dataTarefa">${date.split('-').reverse().join('/')}</span>
-  <span class="classificacao">Horário de execução:</span>
+  <span class="classificacao">Horário:</span>
   <span id="horarioTarefa">${hours}</span>
   <span id="importante">${
     important === 'importante' ? 'Importante' : 'Muito Importante'
@@ -100,10 +100,10 @@ function tarefaFeita(indice) {
   idTarefa.style.border = '3px double green';
   idTarefa.style.color = 'white';
   btnFeito.style.display = 'none';
-  importante.innerText = 'Feito';
+  importante.innerText = 'Tarefa Concluida!';
   setTimeout(() => {
     idTarefa.style.display = 'none';
-  }, 3000);
+  }, 1000);
 }
 
 function targetClick(event) {

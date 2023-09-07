@@ -18,12 +18,13 @@
 }
 
 #container-form {
-  width: 50%;
+  width: 70%;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 #container-form form {
@@ -43,6 +44,10 @@ input, select {
   width: 50%;
   padding: .5rem .5rem;
   border-radius: 10px;
+  border: none;
+}
+input:focus , select:focus {
+  outline-color: var(--corQuinternaria);
 }
 label {
   margin-bottom: 2px;
@@ -63,4 +68,24 @@ button {
 }
 button:hover {
   opacity: 1;
+}
+
+@media (width < 789px){
+  #container-form {
+    width: 90%;
+  }
+}
+@media (width < 616px) {
+  #container-form {
+    width: 120%;
+  }
+  button {
+    font-size: 15px;
+    padding: 15px 0;
+  }
+}
+@media (width < 430px) {
+  #container-form {
+    max-width: 120%;
+  }
 }
